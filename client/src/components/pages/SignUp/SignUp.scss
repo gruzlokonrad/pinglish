@@ -1,0 +1,40 @@
+@import '../../../_color.scss';
+
+.sign-up {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  // margin-top: 13vh;
+  min-height: 36vh;
+  padding: 10vh 0;
+
+  &__form {
+
+    .header {
+      font-size: 20px;
+      margin-bottom: 5vh;;
+    }
+
+    .inputs {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      flex-direction: column;
+      min-height: 30vh;
+      // min-height: 20rem;
+
+      > * {
+        // border: 2px dashed pink;
+      }
+      input {
+        padding: 5px;
+        padding-left: 10px;
+        border-radius: 25px;
+      }
+
+      label {
+        margin-left: 5px;
+      }
+    }
+  }
+}

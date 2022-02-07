@@ -1,0 +1,60 @@
+@import '../_color.scss';
+
+.mainSection {
+  min-height: 90vh;
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+
+  >* {
+    flex-basis: 40%;
+  }
+  > img {
+    max-width: 40%;
+  }
+
+  .headline {
+    text-align: right;
+    font-size: 4vh;
+  }
+
+  .description {
+    text-align: right;
+  }
+}
+
+.left {
+  :first-child {
+    order: 2;
+
+    * {
+      text-align: left;
+    }
+  }
+}
+
+@media screen and (max-width: 960px){
+  .mainSection {
+    padding: 2vh 0;
+    min-height: 70vh;
+
+    >* {
+      flex-basis: 90%;
+    }
+    
+    *{
+      text-align: center !important;
+    }
+
+    > img{
+      max-width: 90%;
+      order: 2;
+    }
+
+    .headline{
+      margin: 2vh 0;
+    }
+  }
+}
