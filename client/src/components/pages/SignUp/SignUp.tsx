@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import { Button } from '../../Button';
+import { useState } from 'react';
+import { Button } from '../../Button/Button';
 import './SignUp.scss'
 
 import Axios from 'axios';

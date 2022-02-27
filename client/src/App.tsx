@@ -6,9 +6,9 @@ import {
   Route,
 } from "react-router-dom";
 
-import Navbar from './components/Navbar';
+import Navbar from './components/Navbar/Navbar';
 import Home from './components/pages/HomePage/Home';
-import Footer from './components/Footer';
+import Footer from './components/Footer/Footer';
 import Contact from './components/pages/Contact/Contact';
 import SignUp from './components/pages/SignUp/SignUp';
 
