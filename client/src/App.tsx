@@ -1,31 +1,27 @@
 import React from 'react';
 import './App.scss';
-import {
-  BrowserRouter as Router,
-  Routes,
-  Route,
-} from "react-router-dom";
 
-import Navbar from './components/Navbar/Navbar';
-import Home from './components/pages/HomePage/Home';
-import Footer from './components/Footer/Footer';
-import Contact from './components/pages/Contact/Contact';
-import SignUp from './components/pages/SignUp/SignUp';
+import { MdSettingsSuggest } from 'react-icons/md'
+import logo from './img/logo.webp';
 
 
 
 function App() {
   return (
     <div className="App ">
-      <Router>
-        <Navbar />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="sign-up" element={ <SignUp /> } />
-          <Route path="contact" element={ <Contact /> } />
-        </Routes>
-        <Footer />
-      </Router>
+      <div className="logo center">
+        <img src={logo} className="logo__icon" alt="logo" />
+      </div>
+      <div className="container center">
+        <main className="">
+          <div className="icon center">
+            <MdSettingsSuggest />
+          </div>
+          <div className="content center">
+            Tu powstaje strona Pinglish.pl
+          </div>
+        </main>
+      </div>
     </div>
   );
 }
