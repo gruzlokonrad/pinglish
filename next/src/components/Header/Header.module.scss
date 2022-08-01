@@ -1,0 +1,39 @@
+@import "../../../styles/colors.module.scss";
+
+.headerSection {
+  min-height: 10vh;
+  padding: 10px 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  transition: 0.3s;
+
+  
+  &__hidden {
+    top: -95px;
+  }
+  &__background {
+    background-color: white;
+  }
+}
+
+.header {
+  display: flex;
+
+  .logo {
+    width: 40%;
+  }
+
+  .navbar {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    column-gap: 20px;
+    width: 100%;
+    color: $blue;
+
+    a {
+      padding: 5px;
+    }
+  }
+}

@@ -1,0 +1,35 @@
+@import '../../../styles/colors.module.scss';
+
+.callToActionSection{
+  color: $white;
+  background-color: $blue;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+}
+
+.callToAction {
+
+  > *:not(button) {
+    padding: 4vh 0;
+  }
+
+  &__headline {
+    font-size: 40px;
+  }
+
+  &__description {
+    font-size: 24px;
+  }
+
+  button {
+    font-size: 20px;
+    margin: 4vh 0;
+  }
+}
+.red {
+  background-color: $red;
+}
