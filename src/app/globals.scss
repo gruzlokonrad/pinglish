@@ -106,21 +106,37 @@ a {
   }
 } */
 
-@use '_colors';
+// @use '_colors';
 
 @tailwind base;
+
+@layer base {
+  body {
+    @apply text-blue;
+  }
+  a {
+    @apply hover:text-red; 
+  }
+  section {
+    @apply px-10 py-3;
+  }
+  h1 {
+    @apply text-4xl;
+  }
+}
+
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --border: 1px dashed #{colors.$black};
-}
+// :root {
+//   --border: 1px dashed #{colors.$black};
+// }
 
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  color: colors.$blue
+  // color: colors.$blue
 }
 
 html,

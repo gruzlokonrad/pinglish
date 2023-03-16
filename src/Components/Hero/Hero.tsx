@@ -6,10 +6,11 @@ import styles from './Hero.module.scss'
 
 const Hero = () => {
   return (
-    <Container sectionStyle={styles.hero}>
+    <Container className='px-0 py-0'>
       <Image
         src={heroImage}
         alt="Never stop learning image"
+        priority={true}
       />
     </Container>
   )

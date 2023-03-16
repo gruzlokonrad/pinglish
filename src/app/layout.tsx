@@ -2,6 +2,7 @@ import './globals.scss'
 import { Poppins } from '@next/font/google'
 import Navbar from '@/Components/Navbar/Navbar'
 
+
 const poppins = Poppins({
   subsets: ['latin'],
   weight: ['400', '700'],

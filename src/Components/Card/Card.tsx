@@ -3,9 +3,8 @@ import Container from '../Container/Container'
 import styles from './Card.module.scss'
 import Image from 'next/image'
 import img from 'public/img/board.jpg'
+import clsx from 'clsx'
 
-
-const BG_COLORS = ['blue', 'gray', 'red', 'orange'];
 
 interface ICard {
   header: string,
@@ -27,23 +26,24 @@ const Card = ({
   reversed,
   button, //set default
 }: ICard) => {
-
   return (
-    <Container sectionStyle={styles.card}>
-      <article className={!reversed ? 'text-right' : ''}>
-        <header>
-          <h3>{header}</h3>
-        </header>
-        <div className={styles.description}>{description}</div>
-      </article>
-      <article>
-        <Image
-          src={img}
-          alt={img?.alt}
-        />
-      </article>
-    </Container>
+    <template>
+      <Container>
+        <article className={clsx(!reversed && 'text-right')}>
+          <header>
+            <h3>{header}</h3>
+          </header>
+          <div className={styles.description}>{description}</div>
+        </article>
+        <article>
+          <Image
+            src={img}
+            alt="Children with board"
+          />
+        </article>
+      </Container>
+    </template>
   )
 }
 
-export default Card
+export default Card;

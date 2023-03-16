@@ -11,7 +11,7 @@ const Cta = ({
   bgColor
 }: ICta) => {
   return (
-    <Container sectionStyle={styles.cta}>
+    <Container className={`bg-blue text-white h-96 flex flex-col text-center justify-evenly`}>
       <header>
         <h1>{header}</h1>
       </header>
