@@ -1,7 +1,7 @@
-import Header from '@/components/header/header'
+import Header from '@/components/view/header/header'
 import './globals.scss'
 import { Poppins } from 'next/font/google'
-import Footer from '@/components/footer/footer'
+import Footer from '@/components/view/footer/footer'
 const poppins = Poppins({subsets: ['latin'], weight: ["300"]})
 
 export const metadata = {

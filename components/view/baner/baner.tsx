@@ -9,7 +9,8 @@ const Baner = () => {
         src={image}
         alt='Learn English'
         fill
-        style={{objectFit: 'cover'}}
+        className='object-cover'
+        priority
       />
     </div>
   )
