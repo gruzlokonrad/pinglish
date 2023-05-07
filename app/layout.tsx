@@ -21,7 +21,7 @@ export default function RootLayout({
         {/* <!-- Google Tag Manager --> */}
         <noscript>
           <iframe
-            src={`https://www.googletagmanager.com/ns.html?id=${process.env.NEXT_PUBLIC_GOOGLE_TAG_MANAGER}`}
+            src={`https://www.googletagmanager.com/ns.html?id=GTM-N29C9GT`}
             height="0"
             width="0"
             style={{
@@ -36,14 +36,14 @@ export default function RootLayout({
           new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
           j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-          })(window,document,'script','dataLayer','${process.env.NEXT_PUBLIC_GOOGLE_TAG_MANAGER}');
+          })(window,document,'script','dataLayer','GTM-N29C9GT');
         `}
         </Script>
         {/* <!-- End Google Tag Manager --> */}
 
         {/* <!-- Google tag (gtag.js) --> */}
         <Script
-          src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`}
+          src={`https://www.googletagmanager.com/gtag/js?id=G-RD9PQKFH7S`}
           strategy="afterInteractive"
         />
         <Script id="google-analytics" strategy="afterInteractive">
@@ -52,7 +52,7 @@ export default function RootLayout({
           function gtag(){dataLayer.push(arguments);}
           gtag('js', new Date());
 
-          gtag('config', '${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}');
+          gtag('config', 'G-RD9PQKFH7S');
         `}
         </Script>
 
