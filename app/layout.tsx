@@ -42,7 +42,7 @@ export default function RootLayout({
         {/* <!-- End Google Tag Manager --> */}
 
         {/* <!-- Google tag (gtag.js) --> */}
-        <Script
+        {/* <Script
           src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`}
           strategy="afterInteractive"
         />
@@ -54,11 +54,10 @@ export default function RootLayout({
 
           gtag('config', '${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}');
         `}
-        </Script>
+        </Script> */}
 
         <div className='flex flex-col h-screen'>
           <Header />
-          {/* <Script src="https://www.googletagmanager.com/gtag/js?id=G-RD9PQKFH7S" strategy="afterInteractive" /> */}
           <main className='grow'>
             {children}
           </main>
